@@ -10,9 +10,11 @@ private:
     T data;
     BinTree* lNode;
     BinTree* rNode;
-    BinTree() {}
 public:
-    explicit BinTree(T val): data(val), lNode(nullptr), rNode(nullptr) {}
+    BinTree() {}
+    explicit BinTree(T val): lNode(nullptr), rNode(nullptr) {
+        this->data = val;
+    }
 
     inline T getData() const { return this->data; }
 
