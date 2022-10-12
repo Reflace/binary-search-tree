@@ -6,14 +6,14 @@
 
 using namespace std;
 
-class Frustrum {
+class Frustum {
 private:
     double h;
     double r1;
     double r2; 
 public:
-    Frustrum();
-    Frustrum(double h, double r1, double r2);
+    Frustum();
+    Frustum(double h, double r1, double r2);
 
     inline void setH(double h) { this->h = h; }
     inline void setR1(double r1) { this->r1 = r1; }
@@ -24,10 +24,10 @@ public:
     inline double getR1() {return this->r1; };
     inline double getR2() {return this->r2; };
 
-    friend bool operator == (Frustrum f1, Frustrum f2);
-    friend bool operator != (Frustrum f1, Frustrum f2);
-    friend bool operator > (Frustrum f1, Frustrum f2);
-    friend bool operator < (Frustrum f1, Frustrum f2);
-    friend ostream& operator<<(ostream& stream, const Frustrum& obj);
-    friend istream& operator>>(istream& stream, Frustrum& obj);
+    friend bool operator == (Frustum f1, Frustum f2);
+    friend bool operator != (Frustum f1, Frustum f2);
+    friend bool operator > (Frustum f1, Frustum f2);
+    friend bool operator < (Frustum f1, Frustum f2);
+    friend ostream& operator<<(ostream& stream, const Frustum& obj);
+    friend istream& operator>>(istream& stream, Frustum& obj);
 };
