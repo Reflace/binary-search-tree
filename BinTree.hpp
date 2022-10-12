@@ -132,6 +132,6 @@ void BinTree<T>::Terminate(BinTree<T>* rootPtr) {
         Terminate(rootPtr->lNode);
         Terminate(rootPtr->rNode);
         delete rootPtr;
-        rootPtr == nullptr;
+        rootPtr = nullptr;
     }
 }
